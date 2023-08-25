@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="land.css">
+</head>
+<body>
+
+<!-- <section id="main">
+
+
+    <section id="page1">
+        <div id="head">
+            <header>
+                <nav class="align_left">
+                   <button>home</button>
+                   <button>find deal</button>
+                   <button>reviews</button>
+                   <button>about us</button>
+                </nav>
+                <nav class="align_right">
+                    <button>login/sign up</button>
+                </nav>
+            </header>
+            <h1>we give you the stuff you need to make more money</h1>
+            <p>This is a landing page. In this I have used HTML, CSS and JavaScript. To check the code please inspect.</p>
+            <button>claim your free consultation</button>
+        </div>
+        <div>
+            <h2>You come up with the business we'll build the website</h2>
+            <p>Here in this part images are used and styling on images is done. Also used buttons to make it more responsive.</p>
+            <img src="free-finance-website-templates-1024x807.jpg" alt="">
+            <button>claim your free consultation</button>
+            <img src="circle-profile-pic.jpg" alt="">
+            <p>Above is a profile image and this is an about section of the consultant. All useful info is shared.</p>
+        </div>
+    </section>
+    
+    <section id="page2">
+        <h2>Our Portfolios</h2>
+        <p>this is a aside section.</p>
+        <div>
+            <div></div>
+            <div>
+                <img src="photo-1619183744799-68f1fd8f1edb.jpeg" alt="">
+                <h3>Landing App</h3>
+                <p>Here I have mentioned about the Landing App. Demo text- Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, nulla.</p>
+                <button> &lt </button>
+                <button> &gt </button>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+         <h2>Our Services</h2>
+         <p>Here I have used flex CSS property. Also shifted this aside section a little towards left.</p>
+         <div>
+            <div>
+                <h3>writing material</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, ea.</p>
+            </div>
+            <div>
+                <h3>landing page design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, ea.</p>
+            </div>
+            <div>
+                <h3>full marketing designs</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, ea.</p>
+            </div>
+            <div>
+                <h3>website developement</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, ea.</p>
+            </div>
+            <div>
+                <h3>additional courses</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, ea.</p>
+            </div>
+         </div>
+    </section>
+
+</section>
+ -->
+
+
+
+<section id="main2">
+        
+    
+    <div id="inside">
+
+        <aside id="scenary">
+            <table>
+                <tr>
+                    <td>Login</td>
+                    <td><select name="" id="">
+                        <option value="">En</option>
+                        <option value="">Hi</option>
+                        <option value="">Fr</option>
+                        <option value="">Es</option>
+                    </select></td>
+                    <td id="cart"></td>
+                    <td id="search"></td>
+                </tr>
+            </table>
+            <div id="slide">
+                <img class="mySlides" src="https://res.cloudinary.com/djcyhbk2e/image/upload/c_fit,f_auto,h_800,q_35,w_800/v1/gvv/prod/cgsugxuljcvim5ijjwm2" alt="photo">
+                <img class="mySlides" src="https://media.architecturaldigest.com/photos/595e521cc5ba1157bf2ba292/master/w_3000,h_2000,c_limit/Cadaques,%20Spain.jpg" alt="photo">
+                <img class="mySlides" src="https://images.alphacoders.com/552/552457.jpg" alt="photo">
+                <img class="mySlides" src="https://images7.alphacoders.com/125/1258635.jpg" alt="photo">
+                <img class="mySlides" src="https://wallpapercave.com/wp/wp3395379.jpg" alt="photo">
+
+                <button onclick="plusDivs(-1)">&#10094;</button>
+                <button  onclick="plusDivs(1)">&#10095;</button>
+            </div>
+        </aside>
+
+        
+        <div id="boat">
+            <span id="logo">INDIA</span>
+            <!-- <table id="nav">
+                <td>Trips</td>
+                <td>Calender</td>
+                <td>Events</td>
+                <td>Contact</td>
+            </table> -->
+            <table id="middle">
+                <tr>
+                    <td> What to Try?</td>
+                    <td> What to Try?</td>
+                    <td> What to Try?</td>
+                    <td id="filter" style="padding: 0px;"> Filter </td>
+                </tr>
+            </table>
+        <div id="inner-boat">
+            <h1>open water scuba diver course-sesimbra</h1>
+            <p style="margin-top: 5%;
+            opacity: 0.3;
+            margin-bottom: 0px;">Price per person from</p>
+            <h1 style="font-weight: 100;">₹9505</h1>
+            <button id="next">next</button>
+        </div>
+            <div id="blur">
+                <p style="opacity: 0.5;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque obcaecati porro architecto asperiores itaque.</p>
+            </div>
+        </div>
+        
+    </div>
+
+</section>
+
+
+
+
+
+<script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+    
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      x[slideIndex-1].style.display = "block";  
+    }
+    </script>
+    
+</body>
+</html>
